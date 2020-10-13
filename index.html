@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>フォーム練習</title>
+	 <meta charaset-utf-8> 
+	 <!-- 文字化け防止 -->
+	 <link rel="stylesheet" type="text/css" href="reset.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="contact">
+		<form>
+			<!-- テキスト -->
+			<div class="form-group">
+				<label class="label">お名前</label>
+				<input type="text" name="" class="input-field">
+				<!-- type="text"でテキストフォームができる -->
+			</div>
+			<!-- ラジオボタン　　選択肢から一択 -->
+			<div class="form-group">
+				<span class="label">性別</span>
+				<span class="input-field">
+					<label for="male">
+						<input type="radio" name="gender" id="male" required>
+						<!-- 最初からどちらかにチェクを入れておくときは、idの後に checked="checked" -->
+						<!-- どちらかに必ずチェックを入れないといけない設定にするときは、idの後に required
+							id= male required   -->
+						男性
+					</label>
+					<label for="female">
+						<input type="radio" name="gender" id="female">
+						女性
+					</label>
+				</span>
+			</div>
+
+			<!--  セレクトボックス（プルダウン）-->
+			<div class="form-group flex">
+				<div class="label">出身</div>
+				<div class="cp_ipselect cp_sl01">
+				<!-- <span class="label">出身</span> -->
+				<span class="input-field">
+					<select required>
+						<option value="1">東京</option>
+						<option value="2">千葉</option>
+						<option value="3">神奈川</option>
+						<option value="4">沖縄</option>
+						<!-- 選択の結果を集計する時などに数で集計できるように。振る数は必ず変える -->
+					</select>
+				</span>
+			</div>
+				<!-- セレクトボックス　コピペVer -->
+			<div class="cp_ipselect cp_sl01">
+				<select required>
+					<option value="" hidden>Choose</option>
+					<option value="1">cat</option>
+					<option value="2">dog</option>
+					<option value="3">rabbit</option>
+					<option value="4">squirrel</option>
+				</select></span>
+			</div>
+
+
+			<!-- チェックボックス -->
+			<div class="form-group"></div>
+				<span class="label">話せる言語</span>
+				<span>
+					<label for="english">
+						<input type="checkbox" name="language">英語
+					</label>
+					<label for="japanese">
+						<input type="checkbox" name="language">日本語
+					</label>
+				</span>
+
+
+			<!-- ボタン -->
+			<div class="form-group">
+				<button class="button" type="submit">送信</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+	 

@@ -1,0 +1,91 @@
+.contact{
+	margin:0 auto;
+	/*内容に合わせて変わる*/
+	width: 960px;
+	background-color: #ccc;
+	padding:30px 50px;
+	font-size: 20px;
+}
+
+.label{
+	width: 120px;
+	margin-right:80px;
+
+}
+
+.input-field{
+	width:240px;
+	height:40px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+
+.button{
+	background-color: #009cd3;
+	color:#fff;
+	font-size: 20px;
+	width:120px;
+	border-radius: 5px;
+	border:3px solid #009cd3;
+	margin-left: 200px;
+	text-align: center;
+	/*デフォルトなので書いても書かなくても変わらないが、
+	絶対に真ん中にしたいよの意思表示みたいな*/	
+}
+/*テキスト */
+/*ラジオボタン*/
+/*セレクトボックス
+	きれいに整えるのが大変なので
+	コピペサイトを使う　↓*/
+.flex{
+	display: flex;
+}
+.cp_ipselect {
+	overflow: hidden;
+	width: 400px;
+	/*margin: 2em auto;*/
+	margin-top: 0;
+	margin-bottom: 2em;
+
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
